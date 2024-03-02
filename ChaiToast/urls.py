@@ -26,6 +26,8 @@ urlpatterns = [
     path('', views.landing, name='landing'),
     path('seller/', include('seller.urls')),
     path('user/', include('user.urls')),
+    path('', views.landing, name='landing'),
+
 ]
 if settings.DEBUG:
         urlpatterns += static(settings.MEDIA_URL,
